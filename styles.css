@@ -46,6 +46,18 @@ html, body{
     color: #218838;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img{
+    height: 75px;
+    width: auto;
+    display: block;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -64,6 +76,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-between;
 }
 
 .hero{
@@ -253,7 +266,56 @@ footer{
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    margin-top: 0;
+    margin-top: auto;
+}
+
+.detail{
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: hidden;
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    cursor: pointer;
+}
+
+.detail:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.detail-reveal{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 04.s ease;
+    padding: 0 2rem;
+}
+
+
+
+.detail:hover .detail-reveal{
+    max-height: 400px;
+    opacity: 1;
+    padding-bottom: 2rem;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-image: url("images/mowing-detail.png");
+}
+
+.detail-reveal img{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .detail-section {
@@ -263,6 +325,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .detail-text {
