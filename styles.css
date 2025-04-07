@@ -119,6 +119,14 @@ a {
 }
 
 @media (max-width: 768px){
+    body{
+        background-color: red;
+    }
+
+    .cta-button{
+        width: 100%;
+    }
+
     .services-content{
         flex-direction: column;
         margin-right: 0;
@@ -146,6 +154,7 @@ a {
     .hero{
         flex-direction: column;
         text-align: center;
+        padding: 2rem 1rem;
     }
 
     .hero-image{
