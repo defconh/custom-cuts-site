@@ -61,7 +61,6 @@ body {
 }
 
 .page-wrapper{
-    min-height: 100%;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -253,4 +252,35 @@ footer{
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.detail-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.detail-text {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.detail-text h2 {
+    margin-bottom: 0.75rem;
+    color: #218838;
+}
+
+.detail-section h2:first-child{
+    margin-top: 0;
+}
+
+
+.detail-text p {
+    color: #333;
 }
