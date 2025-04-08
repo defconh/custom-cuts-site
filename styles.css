@@ -12,6 +12,10 @@ html, body{
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .navbar{
     background-color: #222;
     color: #ccc;
@@ -131,7 +135,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
 
     .cta-button{
         width: 100%;
@@ -352,8 +356,6 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 1rem;
 }
 
@@ -368,16 +370,6 @@ footer{
 
 .cs-gallery-grid img:hover{
     transform: scale(1.03);
-}
-
-.cs-gallery-grid img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    object-fit: cover;
-    aspect-ratio: 4/3;
 }
 
 .cs-container{
