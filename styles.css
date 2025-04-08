@@ -173,6 +173,7 @@ a {
 
     .cs-gallery-grid{
         grid-template-columns: 1fr;
+        padding: 0 1rem;
         gap: 1rem;
     }
 }
@@ -349,10 +350,11 @@ footer{
 
 .cs-gallery-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1.5rem;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .cs-gallery-grid img{
@@ -368,7 +370,7 @@ footer{
     transform: scale(1.03);
 }
 
-.cs-picture img{
+.cs-gallery-grid img{
     width: 100%;
     height: auto;
     border-radius: 10px;
