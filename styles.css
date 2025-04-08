@@ -171,7 +171,7 @@ a {
         margin-top: 2rem;
     }
 
-    .cs-gallery{
+    .cs-gallery-grid{
         grid-template-columns: 1fr;
         gap: 1rem;
     }
@@ -345,13 +345,6 @@ footer{
 
 .detail-text p {
     color: #333;
-}
-
-.cs-gallery{
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 2rem;
 }
 
 .cs-gallery-grid{
